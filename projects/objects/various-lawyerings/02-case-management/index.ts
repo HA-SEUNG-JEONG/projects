@@ -1,8 +1,10 @@
 export type Case = {
-	court: "state" | "federal";
-	decided: Date;
-	defendant: string;
-	id: string | string[];
+	amusing?: boolean;
+	court: string;
+	decided: string | Date | { on: Date };
+	defendant: string | string[];
+	id?: number | number[] | string | string[];
+	ids?: string[];
 	plaintiff: string;
 	title: string;
 };
